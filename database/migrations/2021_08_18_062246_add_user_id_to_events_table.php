@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddDateToEventsTable extends Migration
+class AddUserIdToEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddDateToEventsTable extends Migration
     public function up()
     {
         Schema::table('events', function (Blueprint $table) {
-            $table->dateTime('date');
+            $table->foreignId('user_id')->constrained();
         });
     }
 
@@ -26,7 +26,9 @@ class AddDateToEventsTable extends Migration
     public function down()
     {
         Schema::table('events', function (Blueprint $table) {
-            $table->dropColumn('date');
+            $table->foreignId('user_id')
+            ->constrained()
+            ->onDelete('cascade');
         });
     }
 }

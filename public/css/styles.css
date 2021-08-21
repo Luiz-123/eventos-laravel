@@ -53,6 +53,16 @@ header {
     padding: 10px;
 }
 
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #004085;
+    padding: 10px;
+    width: 275px;
+    border-radius: 5px;    
+}
+
 /* Navbar */
 #navbar img {
     width: 40px;
@@ -83,8 +93,7 @@ header {
     text-align: center;        
 }
 
-.search-container-show {
-    
+.search-container-show {    
     background-size: cover;
     background-position: center;
     height: 400px;   
@@ -242,6 +251,30 @@ header {
 
 #items-list li {
     display: flex;
+}
+
+/* Dashboard */
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 3%;      
+}
+
+.dashboard-events-container button:hover {   
+    font-size: 14px;       
+}
+
+.dashboard-events-container form {
+    display: inline-block;       
+}
+
+/* Edit Page */
+.img-preview {
+    width: 250px;
+    margin-top: 20px;
 }
 
 /* Footer */
