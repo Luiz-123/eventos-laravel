@@ -93,6 +93,16 @@ header {
     text-align: center;        
 }
 
+#search-container-edit {
+    background-image: url("../img/banner-edit.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;        
+}
+
+
 .search-container-show {    
     background-size: cover;
     background-position: center;
@@ -273,7 +283,7 @@ header {
 
 /* Edit Page */
 .img-preview {
-    width: 250px;
+    /*width: 200px;*/    
     margin-top: 20px;
 }
 

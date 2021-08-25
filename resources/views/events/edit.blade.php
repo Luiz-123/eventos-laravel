@@ -3,19 +3,18 @@
 @section('title', 'Editando...')
 
 @section('content')  
-    <div id="search-container-create" class="col-md-12">
-        <h1></h1>        
+    <div  class="col-md-6 offset-md-3 img-preview">
+        <h1>Editando: {{ $event->title }}</h1>
+        <img src="/img/events/{{ $event->image }}" class="img-fluid"  alt="{{ $event->title }}">
     </div>
 
-    <div id="event-create-container" class="col-md-6 offset-md-3">
-        <h1>Editando: {{ $event->title }}</h1>
+    <div id="event-create-container" class="col-md-6 offset-md-3">        
         <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
             <div class="form-group">
                 <label for="title">Imagem do evento</label>
-                <input type="file" class="from-control-file" id="image" name="image">
-                <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}" class="img-preview">
+                <input type="file" class="from-control-file" id="image" name="image">                
             </div>
             <div class="form-group">
                 <label for="title">Evento</label>
@@ -38,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Descrição</label>
-                <textarea name="description" id="description" class="form-control" placeholder="Atividades do evento">{{ $event->description }}</textarea>
+                <textarea name="description" rows="10" id="description" class="form-control" placeholder="Atividades do evento">{{ $event->description }}</textarea>
             </div>
             <div class="form-group">
                 <label for="title">Adicione items de infraestrutura</label>   

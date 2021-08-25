@@ -157,7 +157,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return redirect('/dashboard')->with('msg','Foi cancelada sua participação em evento : ' . $event->title);
+        return redirect('/dashboard')->with('msg','Cancelada sua participação em evento: ' . $event->title);
 
     }
 

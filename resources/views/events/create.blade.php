@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <label for="title">Descrição</label>
-                <textarea name="description" id="description" class="form-control" placeholder="Atividades do evento"></textarea>
+                <textarea name="description" rows="10" id="description" class="form-control" placeholder="Atividades do evento"></textarea>
             </div>
             <div class="form-group">
                 <label for="title">Adicione items de infraestrutura</label>   
