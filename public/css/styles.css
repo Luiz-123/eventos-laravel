@@ -302,3 +302,16 @@ footer {
 footer p {
     margin-bottom: 0;
 }
+
+/* Responsividade */
+@media(max-width: 540px) {
+    #events-container .card {
+        flex: none;
+        max-width: none;           
+        margin: 10px;            
+    }    
+
+    .btn-primary, .btn-primary:focus, .btn-primary:visited {       
+        width: 100%;               
+    }        
+}
