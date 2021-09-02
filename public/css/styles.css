@@ -314,4 +314,17 @@ footer p {
     .btn-primary, .btn-primary:focus, .btn-primary:visited {       
         width: 100%;               
     }        
+
+    #search-container {                
+        height: 280px;
+        width: 100%;          
+    }
+
+    #search-container form {
+        width: 100%;        
+    }
+
+    .search-container-show {
+        height: 280px;
+    }
 }
