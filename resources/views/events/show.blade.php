@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <div id="image-container">
+    <div id="image-container" class="container-fluid">
         <img src="/img/events/{{ $event->image }}" class="search-container-show img-fluid"  alt="{{ $event->title }}">
     </div>
 
